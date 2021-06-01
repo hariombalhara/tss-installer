@@ -1,0 +1,15 @@
+{
+  "name": "tss-installer",
+  "version": "0.1.4",
+  "description": "Install Packages with their types",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "tss-installer": "./index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
