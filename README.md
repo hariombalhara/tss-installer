@@ -8,8 +8,8 @@ Ever installed a package to later find out that you don't have that package's @t
 2. `Update package.json to add two scripts.`
     ```json
         "scripts": {
-            "tss-install": "tss-installer install",
-            "tss-uninstall": "tss-installer uninstall",
+            "tss-install": "PACKAGE_MANAGER=npm tss-installer install",
+            "tss-uninstall": "PACKAGE_MANAGER=npm tss-installer uninstall",
         }
     ```
 
@@ -17,11 +17,11 @@ Ever installed a package to later find out that you don't have that package's @t
 
 - To install a package with it's typings
 
-    `npm run tss-install PACKAGE_NAME`
+    `npm tss-install PACKAGE_NAME`
     
     or
 
-    `pnpm run tss-install PACKAGE_NAME`
+    `pnpm tss-install PACKAGE_NAME`
 
     or
 
@@ -29,11 +29,11 @@ Ever installed a package to later find out that you don't have that package's @t
 
 - To uninstall a package and it's typings
 
-    `npm run tss-uninstall PACKAGE_NAME`
+    `npm tss-uninstall PACKAGE_NAME`
 
     or
 
-    `pnpm run tss-uninstall PACKAGE_NAME`
+    `pnpm tss-uninstall PACKAGE_NAME`
     
     or
 

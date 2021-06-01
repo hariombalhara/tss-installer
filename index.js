@@ -43,7 +43,7 @@ execSync(`${command}`, {
 
 // Install Types of the package
 command = `${packageManager} ${packageManagerCommand} @types/${packageName}`
-console.log(`Running command '${command}'`)
+console.log(`\nRunning command '${command}'`)
 execSync(`${command}`, {
     stdio: 'inherit'
 })
