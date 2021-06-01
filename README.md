@@ -12,6 +12,7 @@ Ever installed a package to later find out that you don't have that package's @t
             "tss-uninstall": "PACKAGE_MANAGER=npm tss-installer uninstall",
         }
     ```
+*[npm](http://npmjs.org/), [yarn](https://yarnpkg.com/) and [pnpm](https://pnpm.io/) are supported. Default is pnpm because of it's disk space efficiency.*
 
 ### How to use
 

@@ -1,6 +1,6 @@
 {
   "name": "tss-installer",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Install Packages with their types",
   "main": "index.js",
   "type": "module",
@@ -11,5 +11,9 @@
     "tss-installer": "./index.js"
   },
   "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hariombalhara/tss-installer.git"
+  },
   "license": "ISC"
 }
