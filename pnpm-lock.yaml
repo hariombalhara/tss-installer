@@ -1,0 +1,13 @@
+lockfileVersion: 5.3
+
+specifiers:
+  which-pm-es: ^0.1.1
+
+dependencies:
+  which-pm-es: 0.1.1
+
+packages:
+
+  /which-pm-es/0.1.1:
+    resolution: {integrity: sha512-n4CerEgwB2Ht5qU+jIhSeQTNcucFz+neg1bc6XY9PGgvrofFd0GSXuk/wN1QH+03m4dYddtdCbJ9pNJWnOz/Gg==}
+    dev: false

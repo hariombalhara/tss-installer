@@ -8,8 +8,8 @@ Ever installed a package to later find out that you don't have that package's @t
 2. `Update package.json to add two scripts.`
     ```json
         "scripts": {
-            "tss-install": "tss-installer install",
-            "tss-uninstall": "tss-installer uninstall",
+            "ti": "tss-installer install",
+            "tu": "tss-installer uninstall"
         }
     ```
 
@@ -18,37 +18,51 @@ Ever installed a package to later find out that you don't have that package's @t
 - To install a package with it's typings
 
     ```bash
-    npm tss-install PACKAGE_NAME --save-dev # Supports same flags as npm
+    npm run ti PACKAGE_NAME --save-dev # Supports same flags as npm
     ```
     
     or
 
     ```bash
-    pnpm tss-install PACKAGE_NAME --save-dev #Supports same flags as pnpm
+    pnpm ti PACKAGE_NAME --save-dev #Supports same flags as pnpm
     ```
 
     or
 
     ```bash
-    yarn tss-install PACKAGE_NAME -d # Supports same flags as yarn
+    yarn ti PACKAGE_NAME -d # Supports same flags as yarn
     ```
 
 - To uninstall a package and it's typings
 
     ```bash
-    npm tss-uninstall PACKAGE_NAME
+    npm run tu PACKAGE_NAME
     ```
 
     or
 
     ```bash
-    pnpm tss-uninstall PACKAGE_NAME
+    pnpm tu PACKAGE_NAME
     ```
     
     or
 
     ```
-    yarn tss-install PACKAGE_NAME
+    yarn tu PACKAGE_NAME
     ```
+## Demo
 
+### Earlier
 
+Installation
+![Earlier Installation - Two Steps](./demo/earlier-installation.png)
+
+Uninstallation
+![Earlier Uninstallation - Two Steps](./demo/earlier-uninstallation.png)
+
+### Now 
+
+Installation
+![Now Installation - Single Step](./demo/now-installation.png)
+Uninstallation
+![Now Uninstallation - Single Step](./demo/now-uninstallation.png)
