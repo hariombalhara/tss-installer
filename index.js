@@ -4,10 +4,12 @@
  * Installs a package along with it's types. Never miss a type again!
  */
 import { execSync } from 'child_process'
+import whichPm from 'which-pm-es'
 const args = process.argv;
 let packageManager;
-if (process.env['PACKAGE_MANAGER']) {
-    packageManager = process.env['PACKAGE_MANAGER']
+
+if (whichPm) {
+    packageManager = whichPm
 } else {
     console.log(`Choosing 'pnpm' as the default Package Manager. You can use a different one using environment variable PACKAGE_MANAGER`)
     packageManager = 'pnpm'
@@ -35,14 +37,14 @@ else if (args.length >= 4) {
 }
 
 // Install Package
-let command = `${packageManager} ${packageManagerCommand} ${packageName}`
-console.log(`Running command '${command}'`)
+let command = `${packageManager} ${packageManagerCommand} ${packageName} ${args.slice(4).join(' ')}`
+console.log(`Running command ${command}`)
 execSync(`${command}`, {
     stdio: 'inherit'
 })
 
 // Install Types of the package
-command = `${packageManager} ${packageManagerCommand} @types/${packageName}`
+command = `${packageManager} ${packageManagerCommand} @types/${packageName} ${args.slice(4).join(' ')}`
 console.log(`\nRunning command '${command}'`)
 execSync(`${command}`, {
     stdio: 'inherit'

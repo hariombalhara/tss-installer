@@ -15,5 +15,8 @@
     "type": "git",
     "url": "git+https://github.com/hariombalhara/tss-installer.git"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "which-pm-es": "^0.1.0"
+  }
 }

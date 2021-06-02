@@ -8,36 +8,47 @@ Ever installed a package to later find out that you don't have that package's @t
 2. `Update package.json to add two scripts.`
     ```json
         "scripts": {
-            "tss-install": "PACKAGE_MANAGER=npm tss-installer install",
-            "tss-uninstall": "PACKAGE_MANAGER=npm tss-installer uninstall",
+            "tss-install": "tss-installer install",
+            "tss-uninstall": "tss-installer uninstall",
         }
     ```
-*[npm](http://npmjs.org/), [yarn](https://yarnpkg.com/) and [pnpm](https://pnpm.io/) are supported. Default is pnpm because of it's disk space efficiency.*
 
 ### How to use
 
 - To install a package with it's typings
 
-    `npm tss-install PACKAGE_NAME`
+    ```bash
+    npm tss-install PACKAGE_NAME --save-dev # Supports same flags as npm
+    ```
     
     or
 
-    `pnpm tss-install PACKAGE_NAME`
+    ```bash
+    pnpm tss-install PACKAGE_NAME --save-dev #Supports same flags as pnpm
+    ```
 
     or
 
-    `yarn tss-install PACKAGE_NAME`
+    ```bash
+    yarn tss-install PACKAGE_NAME -d # Supports same flags as yarn
+    ```
 
 - To uninstall a package and it's typings
 
-    `npm tss-uninstall PACKAGE_NAME`
+    ```bash
+    npm tss-uninstall PACKAGE_NAME
+    ```
 
     or
 
-    `pnpm tss-uninstall PACKAGE_NAME`
+    ```bash
+    pnpm tss-uninstall PACKAGE_NAME
+    ```
     
     or
 
-    `yarn tss-install PACKAGE_NAME`
+    ```
+    yarn tss-install PACKAGE_NAME
+    ```
 
 
