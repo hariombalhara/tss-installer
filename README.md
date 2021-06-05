@@ -18,19 +18,19 @@ Ever installed a package to later find out that you don't have that package's @t
 - To install a package with it's typings
 
     ```bash
-    npm run ti PACKAGE_NAME --save-dev # Supports same flags as npm
+    npm run ti PACKAGE_NAME -- -D # Supports same flags as npm
     ```
     
     or
 
     ```bash
-    pnpm ti PACKAGE_NAME --save-dev #Supports same flags as pnpm
+    pnpm run ti PACKAGE_NAME -- -D #Supports same flags as pnpm
     ```
 
     or
 
     ```bash
-    yarn ti PACKAGE_NAME -d # Supports same flags as yarn
+    yarn run ti PACKAGE_NAME -- --save-dev # Supports same flags as yarn
     ```
 
 - To uninstall a package and it's typings
@@ -42,13 +42,13 @@ Ever installed a package to later find out that you don't have that package's @t
     or
 
     ```bash
-    pnpm tu PACKAGE_NAME
+    pnpm run tu PACKAGE_NAME
     ```
     
     or
 
     ```
-    yarn tu PACKAGE_NAME
+    yarn run tu PACKAGE_NAME
     ```
 ## Demo
 

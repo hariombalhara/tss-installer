@@ -1,6 +1,6 @@
 {
   "name": "tss-installer",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Install Packages with their types",
   "main": "index.js",
   "type": "module",
@@ -9,7 +9,17 @@
     "ti": "tss-installer install",
     "tu": "tss-installer uninstall"
   },
-  "keywords": ["pnpm", "npm", "yarn", "types", "install", "uninstall", "easy", "one-step", "single-step"],
+  "keywords": [
+    "pnpm",
+    "npm",
+    "yarn",
+    "types",
+    "install",
+    "uninstall",
+    "easy",
+    "one-step",
+    "single-step"
+  ],
   "bin": {
     "tss-installer": "./index.js"
   },
@@ -19,6 +29,9 @@
     "url": "git+https://github.com/hariombalhara/tss-installer.git"
   },
   "license": "ISC",
+  "devDependencies": {
+    "tss-installer": "^0.1.8"
+  },
   "dependencies": {
     "which-pm-es": "^0.1.1"
   }
