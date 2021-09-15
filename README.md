@@ -9,13 +9,22 @@ With Yarn 2.0, this is achievable using [`yarn dlx`](https://yarnpkg.com/cli/dlx
 
 Choose any of the following commands.
 
-`npm install with-types --save-dev`  # Optional Step with npm
+```bash
+# Optional Step with npx
+npm install with-types --save-dev
 
-`pnpm add with-types --save-dev` # Optional Step with pnpm
+```
+```bash
+# Optional Step with pnpx
+pnpm add with-types --save-dev
+```
 
-`yarn add with-types --dev` # Optional Step with Yarn 2.0 but required for lesser versions
+``` bash
+# Optional Step with Yarn 2.0 but required for lesser versions
+`yarn add with-types --dev`
+```
 
-### How to use
+## How to use
 
 - To install a package with it's typings
 
