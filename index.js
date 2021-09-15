@@ -10,12 +10,12 @@ let packageManager;
 
 if (whichPm) {
   packageManager = whichPm;
-} else if (process.env.PACKAGE_MANAGER) {
-  packageManager = process.env.PACKAGE_MANAGER;
+} else if (process.env.WITH_TYPE_PACKAGE_MANAGER) {
+  packageManager = process.env.WITH_TYPE_PACKAGE_MANAGER;
 } else {
   // With pnpx whichPm returns null. Handle that.
   console.log(
-    `Couldn't identify the Package Manager that run this command. Assuming 'pnpm'. You can use a different one using environment variable PACKAGE_MANAGER`
+    `Couldn't identify the Package Manager that run this command. Assuming 'pnpm'. You can use a different one using environment variable WITH_TYPE_PACKAGE_MANAGER`
   );
   packageManager = "pnpm";
 }
