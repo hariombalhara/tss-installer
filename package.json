@@ -1,13 +1,11 @@
 {
-  "name": "tss-installer",
+  "name": "with-types",
   "version": "0.1.9",
-  "description": "Install Packages with their types",
+  "description": "Install/Uninstall Packages with their types",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "ti": "tss-installer install",
-    "tu": "tss-installer uninstall"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "pnpm",
@@ -21,16 +19,16 @@
     "single-step"
   ],
   "bin": {
-    "tss-installer": "./index.js"
+    "with-types": "./index.js",
+    "wt": "./index.js"
   },
   "author": "",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hariombalhara/tss-installer.git"
+    "url": "git+https://github.com/hariombalhara/with-types.git"
   },
   "license": "ISC",
   "devDependencies": {
-    "tss-installer": "^0.1.8"
   },
   "dependencies": {
     "which-pm-es": "^0.1.1"

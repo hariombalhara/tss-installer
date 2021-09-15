@@ -1,23 +1,13 @@
 lockfileVersion: 5.3
 
 specifiers:
-  tss-installer: ^0.1.8
   which-pm-es: ^0.1.1
 
 dependencies:
   which-pm-es: 0.1.1
 
-devDependencies:
-  tss-installer: 0.1.8
-
 packages:
-
-  /tss-installer/0.1.8:
-    resolution: {integrity: sha512-AOLARaM+uXZ/XpgJz8aFD4+fhZ5Onw9P9id5xito/+hRkjuLr/gf82a3DfVdeMy/6nhtGnrP3RyTeJWIjkYrhQ==}
-    hasBin: true
-    dependencies:
-      which-pm-es: 0.1.1
-    dev: true
 
   /which-pm-es/0.1.1:
     resolution: {integrity: sha512-n4CerEgwB2Ht5qU+jIhSeQTNcucFz+neg1bc6XY9PGgvrofFd0GSXuk/wN1QH+03m4dYddtdCbJ9pNJWnOz/Gg==}
+    dev: false
