@@ -26,22 +26,23 @@ yarn add with-types --dev
 
 ## How to use
 
+NOTE: If the package is installed locally, you can use a shorthand `wt` instead of `with-types`. So, `npx with-types` become `npx wt`
 - To install a package with it's typings
 
     ```bash
-    npx with-types install PACKAGE_NAME -- -D # Supports same flags as npm
+    npx with-types install PACKAGE_NAME --save-dev # Supports same flags as npm
     ```
     
     or
 
     ```bash
-    pnpx with-types install PACKAGE_NAME -- -D # Supports same flags as pnpm
+    pnpx with-types install PACKAGE_NAME --save-dev # Supports same flags as pnpm
     ```
 
     or
 
     ```bash
-    yarn with-types install PACKAGE_NAME -- --save-dev # Supports same flags as yarn. It assumes that package is installed locally.
+    yarn with-types install PACKAGE_NAME --dev # Supports same flags as yarn. It assumes that package is installed locally.
     ```
 
 - To uninstall a package and it's typings
@@ -58,6 +59,6 @@ yarn add with-types --dev
     
     or
 
-    ```
+    ```bash
     yarn with-types uninstall PACKAGE_NAME
     ```
