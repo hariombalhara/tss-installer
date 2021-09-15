@@ -21,7 +21,7 @@ pnpm add with-types --save-dev
 
 ``` bash
 # Optional Step with Yarn 2.0 but required for lesser versions
-`yarn add with-types --dev`
+yarn add with-types --dev
 ```
 
 ## How to use

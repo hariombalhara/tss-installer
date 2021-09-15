@@ -1,6 +1,6 @@
 {
   "name": "with-types",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "Install/Uninstall Packages with their types",
   "main": "index.js",
   "type": "module",
