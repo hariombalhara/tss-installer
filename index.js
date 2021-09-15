@@ -6,7 +6,19 @@
 import { execSync } from "child_process";
 import whichPm from "which-pm-es";
 const args = process.argv;
-const packageManager = whichPm;
+let packageManager;
+
+if (whichPm) {
+  packageManager = whichPm;
+} else if (process.env.PACKAGE_MANAGER) {
+  packageManager = process.env.PACKAGE_MANAGER;
+} else {
+  // With pnpx whichPm returns null. Handle that.
+  console.log(
+    `Couldn't identify the Package Manager that run this command. Assuming 'pnpm'. You can use a different one using environment variable PACKAGE_MANAGER`
+  );
+  packageManager = "pnpm";
+}
 
 const configOfSupportedPackageManagers = [
   { name: "npm", commands: ["install", "uninstall"], cmdMap: {} },
@@ -51,7 +63,7 @@ if (!configOfPackageManagerInUse) {
     packageManagerCommand;
   packageName = args[3];
 } else {
-  console.warn('Usage: "npx with-types install PACKAGE_NAME". See https://github.com/hariombalhara/with-types for more details');
+  console.warn('Usage: "npx with-types install PACKAGE_NAME". See https://github.com/hariombalhara/with-types for details on how to use with other Package Managers');
   process.exit(1);
 }
 
