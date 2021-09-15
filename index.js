@@ -6,16 +6,7 @@
 import { execSync } from "child_process";
 import whichPm from "which-pm-es";
 const args = process.argv;
-let packageManager;
-
-if (whichPm) {
-  packageManager = whichPm;
-} else {
-  console.log(
-    `Choosing 'pnpm' as the default Package Manager. You can use a different one using environment variable PACKAGE_MANAGER`
-  );
-  packageManager = "pnpm";
-}
+const packageManager = whichPm;
 
 const configOfSupportedPackageManagers = [
   { name: "npm", commands: ["install", "uninstall"], cmdMap: {} },
@@ -60,7 +51,7 @@ if (!configOfPackageManagerInUse) {
     packageManagerCommand;
   packageName = args[3];
 } else {
-  console.warn('Usage: "pnpm/npm/yarn run ti/tu PACKAGE_NAME -- -D"');
+  console.warn('Usage: "npx with-types install PACKAGE_NAME". See https://github.com/hariombalhara/with-types for more details');
   process.exit(1);
 }
 
