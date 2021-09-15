@@ -1,4 +1,4 @@
-# Install Packages with their types
+# Install/Uninstall Packages with their types(@types/*)
 
 Ever installed a package to later find out that you don't have that package's @typings/ installed ? If yes, this is the solution for that.
 
@@ -29,35 +29,35 @@ yarn add with-types --dev
 - To install a package with it's typings
 
     ```bash
-    npx wt install PACKAGE_NAME -- -D # Supports same flags as npm
+    npx with-types install PACKAGE_NAME -- -D # Supports same flags as npm
     ```
     
     or
 
     ```bash
-    pnpx wt install PACKAGE_NAME -- -D # Supports same flags as pnpm
+    pnpx with-types install PACKAGE_NAME -- -D # Supports same flags as pnpm
     ```
 
     or
 
     ```bash
-    yarn wt install PACKAGE_NAME -- --save-dev # Supports same flags as yarn. It assumes that package is installed locally.
+    yarn with-types install PACKAGE_NAME -- --save-dev # Supports same flags as yarn. It assumes that package is installed locally.
     ```
 
 - To uninstall a package and it's typings
 
     ```bash
-    npx wt uninstall PACKAGE_NAME
+    npx with-types uninstall PACKAGE_NAME
     ```
 
     or
 
     ```bash
-    pnpx wt uninstall PACKAGE_NAME
+    pnpx with-types uninstall PACKAGE_NAME
     ```
     
     or
 
     ```
-    yarn wt uninstall PACKAGE_NAME
+    yarn with-types uninstall PACKAGE_NAME
     ```

@@ -1,7 +1,7 @@
 {
   "name": "with-types",
-  "version": "0.1.11",
-  "description": "Install/Uninstall Packages with their types",
+  "version": "0.1.12",
+  "description": "Install/Uninstall Packages with their types(@types/*)",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -28,7 +28,6 @@
     "url": "git+https://github.com/hariombalhara/with-types.git"
   },
   "license": "ISC",
-  "devDependencies": {},
   "dependencies": {
     "which-pm-es": "^0.1.1"
   }
